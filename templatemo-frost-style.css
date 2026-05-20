@@ -302,7 +302,53 @@ button {
 	margin-left: var(--sidebar-width);
 	min-height: 100vh;
 }
+.nav-main {
+	position: absolute;
+	top: 30px;
+	right: 50px;
 
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	z-index: 999;
+}
+
+.nav-main a {
+	color: var(--navy);
+	font-weight: 500;
+}
+
+.nav-main .nav-cta {
+	background: var(--terracotta);
+	color: white;
+	padding: 10px 18px;
+	border-radius: 10px;
+}
+
+#authArea button {
+	background: var(--navy);
+	color: white;
+	padding: 10px 18px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+#userInfo {
+	background: rgba(255,255,255,0.4);
+	backdrop-filter: blur(10px);
+
+	padding: 10px 18px;
+	border-radius: 999px;
+
+	color: var(--navy);
+	font-weight: 600;
+	font-size: 14px;
+
+	box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+	border: 1px solid rgba(255,255,255,0.3);
+}
 /* ============================================
        Scroll-triggered Animation Classes
        ============================================ */
@@ -348,7 +394,6 @@ button {
 		var(--cream);
 	overflow: hidden;
 }
-
 .hero__content {
 	max-width: 640px;
 	position: relative;
@@ -1481,4 +1526,3 @@ button {
 		padding-left: 1.25rem;
 		padding-right: 1.25rem;
 	}
-}
